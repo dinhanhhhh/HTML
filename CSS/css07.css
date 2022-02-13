@@ -1,0 +1,19 @@
+h1 {
+    color:blue;
+    font-weight: bold;
+    font-size: 40px;
+}
+table {
+    border: solid #00FFFF;
+    border-spacing: 5px;
+    background-color: #00FFFF;
+    width:100%;
+}
+h2, h3 {
+    font-weight: bold;
+    font-size: 30px;
+}
+div {
+    color:gray;
+}
+

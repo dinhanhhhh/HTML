@@ -1,0 +1,46 @@
+h1{
+   color:green;
+   padding: 10px;
+   font-size: 3em;
+   font-weight: bold;
+   height: 80px;
+   
+}
+.content>div{
+    background-color: rgba(7, 124, 170, 0.712);
+    padding: 10px;
+}
+a{
+    font-size: 20px;
+    color: white;
+    margin-right: 20px;
+}
+a.ss{
+    float:right;
+}
+a:link{text-decoration:none;}
+a:hover{
+    font-weight: bold;
+    font-size: 35px;
+    color: yellow;
+    text-shadow: 8px 8px 3px black;
+}
+p:nth-child(2){
+    margin: 10px;
+    font-weight: bold;
+}
+.btn{
+    width: 120px;
+    height:40px;
+    background-color: blue;
+    font-size: 1,2em;
+    border-radius:5px;
+}
+.btn:hover{
+    background-color:RED ;
+}
+
+span{
+    color:green;
+    font-size:25px
+}

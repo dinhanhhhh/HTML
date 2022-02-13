@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <script>
+            $().ready(
+                function()
+                    {
+                        $("table").css("border-collapse", "collapse");
+
+                        $("th").css("backgroundColor", "#e6ffff");
+                        $("th").css("border", "1px solid");
+                        $("th").css("borderColor", "#00ff55");
+
+                        $("td").css("border", "1px solid");
+                        $("td").css("borderColor", "#ff5c33");
+
+                        $("#doi").click
+                        (
+                            function()
+                            {
+                                $("tr:odd").css("backgroundColor", "#e6005c");
+                            }
+                        )
+                        $("#macdinh").click
+                        (
+                            function()
+                            {
+                                $("tr:odd").css("backgroundColor", "white   ");
+                            }
+                        )
+                    }
+            );
+        </script>
+        <table>
+            <caption><b>GIÁ VẬT TƯ</b></caption>
+            <tr>
+                <th>Tên vật tư</th>
+                <th>Đơn vị tính</th>
+                <th>Đơn giá</th>
+            </tr>
+            <tr>
+                <td>Cát</td>
+                <td>Khối</td>
+                <td>77,000</td>
+            </tr>
+            <tr>
+                <td>Đá</td>
+                <td>Khối</td>
+                <td>90,000</td>
+            </tr>
+            <tr>
+                <td>Xi măng hà tiên loại 1</td>
+                <td>Bao</td>
+                <td>120,000</td>
+            </tr>
+            <tr>
+                <td>Xi măng hà tiên loại 2</td>
+                <td>Bao</td>
+                <td>100,000</td>
+            </tr>
+        </table>
+        <button id="doi">Đổi màu nền</button>
+        <button id="macdinh">Màu nền mặc định</button>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+div {
+    position:absolute;
+    background-color: yellow;
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    left: 50px;
+}
+
+div:nth-child(2) {
+    top: 200px;
+    overflow: hidden;
+}
+
+div:nth-child(3) {
+    top: 200px;
+    left: 350px;
+    overflow: scroll;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <style>
+            #chung
+            {
+                display:flex;
+                flex-direction: row;
+            }
+            #chung div
+            {
+                width: 50px;
+                height: 50px;
+                margin-left: 5px;
+            }
+        </style>
+        <script>
+            $().ready
+            (
+                function()
+                {
+                    $("#xanhduong").css("border", "1px solid");
+                    $("#xanhduong").css("borderColor", "#0000ff");
+                    $("#xanhduong").css("backgroundColor", "#0000ff");
+
+
+                    $("#do").css("border", "1px solid");
+                    $("#do").css("borderColor", "red");
+                    $("#do").css("backgroundColor", "red");
+
+
+                    $("#hong").css("border", "1px solid");
+                    $("#hong").css("borderColor", "pink");
+                    $("#hong").css("backgroundColor", "pink");
+
+
+                    $("#xanhla").css("border", "1px solid");
+                    $("#xanhla").css("borderColor", "green");
+                    $("#xanhla").css("backgroundColor", "green");
+                   
+
+                    $("#xanhduong").click
+                    (
+                        function()
+                        {
+                            $("#hienthi").text("Màu bạn chọn là xanh dương : rgb(0, 0, 255)").css("color", "#0000ff");
+                        }
+                    )
+                    $("#do").click
+                    (
+                        function()
+                        {
+                            $("#hienthi").text("Màu bạn chọn là đỏ : rgb(255, 0, 0)").css("color", "red");
+                        }
+                    )
+                    $("#hong").click
+                    (
+                        function()
+                        {
+
+                            $("#hienthi").text("Màu bạn chọn là hồng : rgb(255, 192, 203)").css("color", "pink");
+                        }
+                    )
+                    $("#xanhla").click
+                    (
+                        function()
+                        {
+                            $("#hienthi").text("Màu bạn chọn là xanh lá : rgb(0, 128, 0)").css("color", "green");
+                        }
+                    )
+                }
+            )
+        </script>
+        Click lên các hình vuông:
+        <br>
+        <div id="chung">
+            <div id="xanhduong"></div>
+            <div id="do"></div>
+            <div id="hong"></div>
+            <div id="xanhla"></div>
+        </div>
+        <b id="hienthi"></b>
+    </body>
+</html>
