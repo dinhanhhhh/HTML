@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>jQ05</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <script>
+        $(document).ready(function(){
+          $("img").mouseover(function(){
+            $(this).animate({
+                 width: "+=200px" , 
+                 height: "+=200px" 
+        },1000)
+     }) 
+     .mouseout(function() {
+        $(this).animate({
+                 width: "-=200px" , 
+                 height: "-=200px" 
+        },1000)
+     })
+ }) 
+        </script>
+        <img src="Images/ly.jpg">
+    </body>
+</html>

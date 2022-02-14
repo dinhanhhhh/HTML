@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ứng dụng web Cs03</title>
+        <meta charset="UTF-8">
+</head>
+<body>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Thông tin cá nhân</legend>
+                <p><label>Tên</label>
+                <input type="text" /> </p>
+                <p>
+                    <label>Địa chỉ</label>
+                <input type="text" /> </p>
+                <p><label>Điện thoại</label>
+                <input type="text" /> </p>
+                <p><input type="submit" value="Xác nhận" /></p>
+            </fieldset>
+            <form action="" method="get">
+         Vui lòng chọn một màu:<br>
+        <select name="selColor">
+            <option value="red">Đỏ</option>
+            <option value="green" selected>Xanh lục</option>
+            <option value="blue" >Xanh dương</option>
+        </select>
+        <button type="submit">Xác nhận</button>
+            </form>
+
+        </form>
+        <form action="" name="frmDays" method="post">
+            Chọn các ngày trong tuần:<br><br>
+            <select size="4" name="selDay" multiple>
+            <option value="Mon">Thứ hai</option>
+            <option value="Tue">Thứ ba</option>
+            <option value="Wed">Thứ tư</option>
+            <option value="Thu" disabled>Thứ năm</option>
+            <option value="Fri">Thứ sáu</option>
+            <option value="Sat" selected>Thứ bảy</option>
+            <option value="Sun">Chủ nhật</option>
+            </select>
+            <br><br><input type="submit" value="Xác nhận" />
+            </form>
+            <form action="http://www.abc.com/upload.asp" method="post"
+name="formUpload" enctype="multipart/form-data">
+Chọn file upload:<br>
+<input type="file" name="fileUpload" accept="image/*" />
+<br><input type="submit" value="Tải lên" />
+</form>
+
+</body>
+</html>

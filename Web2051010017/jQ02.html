@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <script>
+            $().ready
+                (
+                    function()
+                        {
+                            $("#tinh").click
+                                (
+                                  function()
+                                    {   
+                                        var ngaydau = $("#ngaydau").val();
+                                        var ngaysau = $("#ngaysau").val();
+                                        ngaydau = new Date(ngaydau);
+                                        ngaysau = new Date(ngaysau);
+                                        
+                                        var tong = (ngaysau.getTime() - ngaydau.getTime()) / (3600 * 24 * 1000);
+                                        if(tong < 0)
+                                            alert("đ m ngu");
+                                        $("b").text("Số ngày là " + tong);
+                                    }  
+                                );
+                        }
+                );
+        </script>
+        <b1>Tính số ngày giữa hai thời điểm</b1>
+        <br>Từ ngày: <input type="date" id="ngaydau">
+        <br>Đến ngày: <input type="date" id="ngaysau">
+        <br><button id="tinh">Tính số ngày</button>
+        <b></b>
+    </body>
+</html>

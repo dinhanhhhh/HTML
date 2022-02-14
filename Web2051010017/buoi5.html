@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Diễn đàn CNTT</title>
+    </head>
+    <body >
+        <h3>Tính tổng dãy số</h3>
+        <label for="txtNumber">Nhập dãy số, mỗi số cách nhau dấu phẩy</label>
+        <input type="text" id="txtNumber">
+        <button onClick="Sum()">Tính tổng</button>
+        <p id="kq"></p>
+        <script>
+            function Sum() {
+                var text = document.getElementById("txtNumber").value;
+                var numbers = text.split(",")
+                var sum = 0;
+                for (var num in numbers) {
+                    sum += parseFloat(numbers[num]);
+                }
+                document.getElementById("kq").innerHTML = sum;
+            }
+        </script>
+    </body>
+</html>
